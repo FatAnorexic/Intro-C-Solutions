@@ -65,7 +65,7 @@ double NumberArray::getElem(int element) const
 	}
 }
 
-/*The getHigh() and getLow() functions will use selection sort to optain the highest and
+/*The getHigh() and getLow() functions will use selection sort to obtain the highest and
 lowest values and return them.*/
 
 double NumberArray::getHigh() const
@@ -87,7 +87,7 @@ double NumberArray::getHigh() const
 		value[maxIndex] = value[start];
 		value[start] = maxValue;
 	}
-	return value[size];
+	return value[0];
 }
 
 double NumberArray::getLow() const
