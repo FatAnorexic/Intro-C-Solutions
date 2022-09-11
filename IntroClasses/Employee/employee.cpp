@@ -1,4 +1,4 @@
-/*
+
 #include <iostream>
 #include <string>
 #include "employee.h"
@@ -17,4 +17,3 @@ int main()
 	system("pause");
 	return 0;
 }
-*/
