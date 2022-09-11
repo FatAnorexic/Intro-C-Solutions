@@ -20,6 +20,7 @@ number of times tails is facing up, and display those values after the loop fini
 #include <string>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 using namespace std;
 
@@ -28,14 +29,22 @@ class Coin
 private:
 	string sideUp;	//String will either display heads up or tails up when the coin is tossed.
 public:
-	Coin() { toss(); };	//default constructor
+	Coin() 
+	{ 
+		unsigned seed = time(0);
+		
+		srand(seed);
+
+		toss(); 
+	}	//default constructor
 
 	void toss()
 	{
 
 
-		int value = rand() % 2;
+		int value = rand() % 2;	//generates a random number, either 1 or 0
 
+		
 		if (value == 0)
 			sideUp = "Heads";
 		else
