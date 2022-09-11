@@ -1,13 +1,13 @@
 /*Write a class named Coin . The Coin class should have the following member variable:
-• A string named sideUp . The sideUp member variable will hold either “heads” or
-“tails” indicating the side of the coin that is facing up.
+â€¢ A string named sideUp . The sideUp member variable will hold either â€œheadsâ€ or
+â€œtailsâ€ indicating the side of the coin that is facing up.
 The Coin class should have the following member functions:
-• A default constructor that randomly determines the side of the coin that is facing up
-(“heads” or “tails”) and initializes the sideUp member variable accordingly.
-• A void member function named toss that simulates the tossing of the coin. When
+â€¢ A default constructor that randomly determines the side of the coin that is facing up
+(â€œheadsâ€ or â€œtailsâ€) and initializes the sideUp member variable accordingly.
+â€¢ A void member function named toss that simulates the tossing of the coin. When
 the toss member function is called, it randomly determines the side of the coin that
-is facing up (“heads” or “tails”) and sets the sideUp member variable accordingly.
-• A member function named getSideUp that returns the value of the sideUp member
+is facing up (â€œheadsâ€ or â€œtailsâ€) and sets the sideUp member variable accordingly.
+â€¢ A member function named getSideUp that returns the value of the sideUp member
 variable.
 Write a program that demonstrates the Coin class. The program should create an
 instance of the class and display the side that is initially facing up. Then, use a loop
