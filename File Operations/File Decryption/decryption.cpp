@@ -1,7 +1,7 @@
 /*Write a program that decrypts the file produced by the program in Programming
 Challenge 9. The decryption program should read the contents of the coded file, restore
 the data to its original state, and write it to another file.*/
-/*
+
 #include <iostream>
 #include <fstream>
 
@@ -33,4 +33,3 @@ int main()
 
 	return 0;
 }
-*/
