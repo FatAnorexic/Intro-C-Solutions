@@ -6,7 +6,7 @@ Although there are complex encryption techniques, you should come up with a
 simple one of your own. For example, you could read the first file one character at
 a time, and add 10 to the ASCII code of each character before it is written to the
 second file.*/
-/*
+
 #include <iostream>
 #include <fstream>
 
@@ -38,4 +38,3 @@ int main()
 
 	return 0;
 }
-*/
