@@ -2,11 +2,11 @@
 Division Name (such as East, West, North, or South)
 Quarter (1, 2, 3, or 4)
 Quarterly Sales
-The user should be asked for the four quarters’ sales figures for the East, West, North,
+The user should be asked for the four quartersâ€™ sales figures for the East, West, North,
 and South divisions. The data for each quarter for each division should be written to
 a file.
 Input Validation: Do not accept negative numbers for any sales figures*/
-/*
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -62,4 +62,3 @@ int main()
 
 	return 0;
 }
-*/
