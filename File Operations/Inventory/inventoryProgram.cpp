@@ -5,13 +5,13 @@ Wholesale Cost
 Retail Cost
 Date Added to Inventory
 The program should have a menu that allows the user to perform the following tasks:
-• Add new records to the file.
-• Display any record in the file.
-• Change any record in the file.
+â€¢ Add new records to the file.
+â€¢ Display any record in the file.
+â€¢ Change any record in the file.
 Input Validation: The program should not accept quantities, or wholesale or retail
 costs, less than 0. The program should not accept dates that the programmer determines
 are unreasonable.*/
-/*
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -212,4 +212,3 @@ int change(Inventory& record, fstream& file)
 	cin.ignore();
 	return main();
 }
-*/
