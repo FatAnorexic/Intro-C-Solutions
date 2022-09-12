@@ -3,7 +3,7 @@ program should search the file for every occurrence of a specified string. When 
 string is found, the line that contains it should be displayed. After all the occurrences
 have been located, the program should report the number of times the string appeared
 in the file.*/
-/*
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -46,4 +46,3 @@ int main()
 	system("pause");
 	return 0;
 }
-*/
