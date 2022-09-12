@@ -1,11 +1,11 @@
 /*Write a program that reads the data in the file created by the program in Programming
 Challenge 11. The program should calculate and display the following figures:
-• Total corporate sales for each quarter
-• Total yearly sales for each division
-• Total yearly corporate sales
-• Average quarterly sales for the divisions
-• The highest and lowest quarters for the corporation*/
-/*
+â€¢ Total corporate sales for each quarter
+â€¢ Total yearly sales for each division
+â€¢ Total yearly corporate sales
+â€¢ Average quarterly sales for the divisions
+â€¢ The highest and lowest quarters for the corporation*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -85,4 +85,3 @@ void displayData(double totq[], double totyrD[], double totyr, double high, doub
 	cout << "\nHighest sales quarter: " << high << endl;
 	cout << "\nLowest sales quarter: " << low << endl;
 }
-*/
