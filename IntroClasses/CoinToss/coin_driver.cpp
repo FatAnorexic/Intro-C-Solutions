@@ -12,9 +12,6 @@ int main()
 	
 	int h = 0, t = 0;	//initialize the counters
 
-	/*Call to srand within main. I'm uncertain as to why calling it within the toss() function doesn't work properly,
-	but this seems to give the intended result*/
-
 	cout << coin.getSide() << endl << endl;
 
 	for (int i = 0; i < 20; i++)
