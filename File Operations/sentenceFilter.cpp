@@ -3,7 +3,7 @@ input and the second file will be opened for output. (It will be assumed that th
 contains sentences that end with a period.) The program will read the contents of the first
 file and change all the letters to lowercase except the first letter of each sentence, which
 should be made uppercase. The revised contents should be stored in the second file.*/
-/*
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -62,4 +62,3 @@ int main()
 
 	return 0;
 }
-*/
