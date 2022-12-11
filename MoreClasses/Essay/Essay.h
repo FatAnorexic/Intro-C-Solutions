@@ -1,6 +1,6 @@
 #ifndef ESSAY_H
 #define ESSAY_H
-#include "../../../Chapter15/14-1/14-1/GradedActivity.h"
+#include "GradedActivity.h"
 
 class Essay :public GradedActivity
 {
