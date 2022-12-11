@@ -1,7 +1,7 @@
 #ifndef MILTIME_H
 #define MILTIME_H
 #include <string>
-#include "../../../Chapter15/Multiple Inheritance/Multiple Inheritance/Time.h"
+#include "Time.h"
 
 
 class MilTime :public Time
