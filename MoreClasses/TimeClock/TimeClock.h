@@ -1,6 +1,6 @@
 #ifndef TIMECLOCK_H
 #define TIMECLOCK_H
-#include "../../MilitaryTime/MilitaryTime/MilTime.h"
+#include "../MilitaryTime/MilTime.h"
 
 
 class TimeClock :public MilTime
