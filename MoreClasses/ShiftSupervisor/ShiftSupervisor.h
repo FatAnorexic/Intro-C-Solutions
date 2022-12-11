@@ -1,6 +1,6 @@
 #ifndef SHIFTSUPERVISOR_H
 #define SHIFTSUPERVISOR_H
-#include "C:/Users/Alexb/OneDrive/Desktop/C++/C++Basics/Problems15/Employees and Production/Employees and Production/Employee.h"
+#include "../Employees and Production/Employee.h"
 
 class ShiftSupervisor :public Employee
 {
