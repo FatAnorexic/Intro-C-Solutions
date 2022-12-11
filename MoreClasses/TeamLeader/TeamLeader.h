@@ -1,6 +1,6 @@
 #ifndef TEAMLEADER_H
 #define TEAMLEADER_H
-#include "C:/Users/Alexb/OneDrive/Desktop/C++/C++Basics/Problems15/Employees and Production/Employees and Production/ProductionWorker.h"
+#include "../Employees and Production/ProductionWorker.h"
 
 
 class TeamLeader :public ProductionWorker
