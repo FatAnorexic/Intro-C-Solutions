@@ -1,32 +1,26 @@
-
-
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
 #include "CoinToss.h"
-using namespace std;
 
-int main()
-{
+int main(){
 	Coin coin;
 	
 	int h = 0, t = 0;	//initialize the counters
 
-	cout << coin.getSide() << endl << endl;
+	std::cout << coin.getSide() <<'\n\n';
 
-	for (int i = 0; i < 20; i++)
-	{
+	for (int i = 0; i < 20; i++){
 		coin.toss();
-		cout << coin.getSide() << endl;
-		if (coin.getSide() == "Heads")
-			h++;
-		else
-			t++;
+		
+		std::cout << coin.getSide() << '\n';
+		
+		coin.getSide()=="Heads" ? h++ : t++;
 	}
-	cout << endl << endl;
-
-	cout << "Heads came up " << h << " times." << endl;
-	cout << "Tails came up " << t << " times." << endl;
+	
+	std::cout << '\n\n';
+	printf("Heads came up %i times.\n", h);
+	printf("Tails came up %i times.\n",t);
 
 	system("pause");
 	return 0;
