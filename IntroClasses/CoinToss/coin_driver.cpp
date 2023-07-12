@@ -8,7 +8,7 @@ int main(){
 	
 	int h = 0, t = 0;	//initialize the counters
 
-	std::cout << coin.getSide() <<'\n\n';
+	std::cout << coin.getSide() <<'\n';
 
 	for (int i = 0; i < 20; i++){
 		coin.toss();
@@ -18,7 +18,7 @@ int main(){
 		coin.getSide()=="Heads" ? h++ : t++;
 	}
 	
-	std::cout << '\n\n';
+	std::cout << '\n';
 	printf("Heads came up %i times.\n", h);
 	printf("Tails came up %i times.\n",t);
 
