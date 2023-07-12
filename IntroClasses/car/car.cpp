@@ -1,34 +1,32 @@
 
 
 #include <iostream>
-#include <string>
 #include <memory>
 #include "car.h"
-using namespace std;
 
-int main()
-{
-	int year; string make;
 
-	cout << "Enter the year of your vehicle: ";
-	cin >> year;
-	cin.ignore();
-	cout << "Enter the make of your car: ";
-	getline(cin, make);
+int main(){
+	int year; std::string make;
 
-	unique_ptr<Car>car(new Car(year, make));
+	printf("Enter the year of your vehicle: ");
+	std::cin >> year;
+	std::cin.ignore();
+	printf("Enter the make of your car: ");
+	std::getline(std::cin, make);
+
+	std::unique_ptr<Car>car(new Car(year, make));
 
 	//calling the accelerate function 5 times
-	cout << "Accelerating the " << car->getYear() << " " << car->getMake() << endl;
+	std::cout << "Accelerating the " << car->getYear() << " " << car->getMake() << '\n';
 	for (int i=0; i < 5; i++)
 		car->accelerate();
-	cout << "\nThe speed is now: " << car->getSpeed()<<endl;
+	std::cout << "\nThe speed is now: " << car->getSpeed()<<'\n';
 
 	//calling the brake function 5 times
-	cout << "Now decelerating the " << car->getYear() << " " << car->getMake() << endl;
+	std::cout << "Now decelerating the " << car->getYear() << " " << car->getMake() << '\n';
 	for (int i = 0; i < 5; i++)
 		car->brake();
-	cout << "\nThe speed is now: " << car->getSpeed() << endl;
+	std::cout << "\nThe speed is now: " << car->getSpeed() << '\n';
 
 	system("pause");
 	return 0;

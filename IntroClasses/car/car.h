@@ -21,17 +21,17 @@ After each call to the brake function, get the current speed of the car and disp
 #ifndef CAR_H
 #define CAR_H
 #include <string>
-using namespace std;
+//using namespace std;|never EVER declare a namespace in a header file!
 
 class Car
 {
 private:
 	int yearModel;
-	string make;
+	std::string make;
 	int speed;
 public:
 	//Constructor that accepts arguments for make and year-speed set to 0
-	Car(int year, string m)
+	Car(int year, std::string m)
 	{
 		yearModel = year;
 		make = m;
@@ -43,7 +43,7 @@ public:
 
 	//accessor functions getYear, getModel, getSpeed
 	int getYear() { return yearModel; }
-	string getMake() { return make; }
+	std::string getMake() { return make; }
 	int getSpeed() { return speed; }
 };
 #endif // !CAR_H
