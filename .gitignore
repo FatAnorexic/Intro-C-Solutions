@@ -3,3 +3,5 @@ IntroClasses/CoinToss/coin_driver.exe
 .vscode/c_cpp_properties.json
 .gitignore
 .vscode/settings.json
+.vscode/tasks.json
+IntroClasses/Date/date_test.exe
