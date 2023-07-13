@@ -1,5 +1,3 @@
-
-
 #ifndef POPULATION_H
 #define POPULATION_H
 
@@ -19,6 +17,6 @@ public:
 
 	double getBirthRate() const { return births / population; }
 	double getDeathRate() const { return deaths / population; }
-	void getRatio() const;//found population.cpp
+	double getRatio() const;//found population.cpp
 };
 #endif // !POPULATION_H

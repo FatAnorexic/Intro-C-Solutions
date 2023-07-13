@@ -1,28 +1,35 @@
-
-
 #include <iostream>
 #include "population.h"
-using namespace std;
 
 int main()
 {
 	long population, births, deaths;
 
-	cout << "Enter the population for the area: ";
-	cin >> population;
-	cin.ignore();
-	cout << "Enter the births in your given area: ";
-	cin >> births;
-	cin.ignore();
-	cout << "Enter the deaths in that same area: ";
-	cin >> deaths;
+	printf("Enter the population for the area: ");
+	std::cin >> population;
+	std::cin.ignore();
+	printf("Enter the births in your given area: ");
+	std::cin >> births;
+	std::cin.ignore();
+	printf("Enter the deaths in that same area: ");
+	std::cin >> deaths;
 
 	Population area(population, births, deaths);
+	double ratio=area.getRatio();
 
-	cout << "The birth rate is: " << area.getBirthRate() << endl;
-	cout << "The death rate: " << area.getDeathRate() << endl;
+	std::cout << "The birth rate is: " << area.getBirthRate() << '\n';
+	std::cout << "The death rate: " << area.getDeathRate() << '\n';
+	std::cout << "The ratio stuff:\n"; 
+	
+	if (ratio > 1.0){
+		 printf("\nThe population is growing by a ratio of: %f\n", ratio);
+	}else if (ratio < 1.0)
+		printf("\nThe population is in decline by a ratio of: %f\n", ratio);
+	
+	else if(ratio == 1.0)
+		printf("\nThe population stayed roughly the same: %f\n", ratio); 
+	std::cout<<'\n';
 
-	cout << "The ratio stuff:\n\n"; area.getRatio(); cout<<endl;
-
+	system("pause");
 	return 0;
 }
