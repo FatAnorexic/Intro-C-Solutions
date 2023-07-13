@@ -1,25 +1,20 @@
-
-/*
 #include <iostream>
-#include <string>
 #include "date.h"
-using namespace std;
 
-int main()
-{
+
+int main(){
 	int day, month, year;
-	cout << "Enter the day, the month, then the year: ";
-	cin >> day;
-	cin >> month;
-	cin >> year;
+	
+	printf("Enter the day, the month, then the year as dd/mm/yyyy: ");
+	std::cin >> day >> month >> year;
 
 	Date date(day, month, year);
 
-	cout << "The date is: " << date.getDate() << endl;
-	cout << "The formal date is: " << date.getFormal() << endl;
-	cout << "The euro date is: " << date.getEuro() << endl;
-
+	
+	std::cout<<"The date is: "<< date.getDate()<<'\n';
+	std::cout<<"The formal date is: "<< date.getFormal()<<'\n';
+	std::cout<<"The euro date is: "<< date.getEuro()<<'\n';
+	
 	system("pause");
 	return 0;
 }
-*/
