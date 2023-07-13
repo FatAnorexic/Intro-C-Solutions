@@ -17,7 +17,7 @@ not accept values for the month greater than 12 or less than 1.*/
 #ifndef DATE_H
 #define DATE_H
 #include <string>
-using namespace std;
+
 
 class Date
 {
@@ -26,9 +26,9 @@ private:
 	bool isValid(int, int) const;	//gives a true or false value for the limits on our dates. 
 public:
 	Date(int, int, int);	//constructor
-	string getDate()const;	//Basic get date format
-	string getFormal()const;	//returns formal date
-	string getEuro()const;	//returns the eur0 date
+	std::string getDate()const;	//Basic get date format
+	std::string getFormal()const;	//returns formal date
+	std::string getEuro()const;	//returns the eur0 date
 
 	//All defined parameters are found in date.cpp
 };
