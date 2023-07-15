@@ -13,39 +13,25 @@ public:
 	}
 
 	void setGrammar(int g) {
-		if (g < 31)
-			grammar = g;
-		else
-			grammar = 0;
+		g < 31 ? grammar=g:grammar=0;
+		
 		score += grammar;
 	}
 
 	void setSpell(int s) {
-		if (s < 21)
-			spelling = s;
-		else
-			spelling = 0;
+		s < 21 ? spelling = s : spelling = 0;
 		score += spelling;
 	}
 
 	void setLen(int l) {
-		if (l < 21)
-			length = l;
-		else
-			length = 0;
+		l < 21 ? length = l:length = 0;
 		score += length;
 	}
 
 	void setContent(int c) { 
 	
-		if (c < 31)
-			content = c;
-		else
-			content = 0;
+		c < 31 ? content = c:content = 0;
 		score += content;
 	}
-
-
-
 };
 #endif // !ESSAY_H

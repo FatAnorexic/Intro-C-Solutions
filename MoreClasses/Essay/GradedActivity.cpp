@@ -2,17 +2,9 @@
 
 char GradedActivity::getLetterGrade() const
 {
-	char letter;
-
-	if (score > 89)
-		letter = 'A';
-	else if (score > 79)
-		letter = 'B';
-	else if (score > 69)
-		letter = 'C';
-	else if (score > 59)
-		letter = 'D';
-	else
-		letter = 'F';
-	return letter;
+	return (
+		score>89 ? 'A':
+		score>79 ? 'B':
+		score>69 ? 'C':
+		score>59 ? 'D':'F');
 }
